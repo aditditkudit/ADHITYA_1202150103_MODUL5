@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coorD"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_margin_vertical"
+    android:paddingLeft="@dimen/activity_margin_horizontal"
+    android:paddingRight="@dimen/activity_margin_horizontal"
+    android:paddingTop="@dimen/activity_margin_vertical"
+    tools:context="com.example.android.adhitya_1202150103_modul5.MainActivity">
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/btn_add"
+        android:onClick="addData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        app:layout_anchor="@+id/linearLayout"
+        app:layout_anchorGravity="right|bottom"
+        app:srcCompat="@android:drawable/ic_input_add" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/listData"
+            android:layout_width="match_parent"
+            android:layout_height="464dp" />
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>
